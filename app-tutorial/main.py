@@ -22,6 +22,10 @@ def main():
         plugin.publish("color.mean.g", mean_color[1], timestamp=snapshot.timestamp)
         plugin.publish("color.mean.b", mean_color[2], timestamp=snapshot.timestamp)
 
+        # save and upload image
+        snapshot.save("snapshot.jpg")
+        plugin.upload_file("snapshot.jpg", timestamp=snapshot.timestamp)
+
 
 if __name__ == "__main__":
     main()

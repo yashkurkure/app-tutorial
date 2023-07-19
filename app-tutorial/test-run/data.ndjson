@@ -4,3 +4,7 @@
 {"meta":{},"name":"color.mean.r","timestamp":"2023-07-19T17:05:35.408883314","value":106.68337890625}
 {"meta":{},"name":"color.mean.g","timestamp":"2023-07-19T17:05:35.408883314","value":106.76485026041667}
 {"meta":{},"name":"color.mean.b","timestamp":"2023-07-19T17:05:35.408883314","value":103.90221354166667}
+{"meta":{},"name":"color.mean.r","timestamp":"2023-07-19T17:07:09.744366391","value":109.72836588541666}
+{"meta":{},"name":"color.mean.g","timestamp":"2023-07-19T17:07:09.744366391","value":109.71347981770833}
+{"meta":{},"name":"color.mean.b","timestamp":"2023-07-19T17:07:09.744366391","value":107.09302408854167}
+{"meta":{"filename":"snapshot.jpg"},"name":"upload","timestamp":"2023-07-19T17:07:09.744366391","value":"/home/yash/ws/sage-example/app-tutorial/test-run/uploads/1689804429744366391-snapshot.jpg"}
