@@ -1,5 +1,6 @@
 import numpy as np
-import cv2
+
+from waggle.plugin import Plugin
 from waggle.data.vision import Camera
 
 
@@ -8,15 +9,18 @@ def compute_mean_color(image):
 
 
 def main():
-    # open camera and take snapshot
-    with Camera() as camera:
-        snapshot = camera.snapshot()
+    with Plugin() as plugin:
+        # open camera and take snapshot
+        with Camera() as camera:
+            snapshot = camera.snapshot()
 
-    # compute mean color
-    mean_color = compute_mean_color(snapshot.data)
+        # compute mean color
+        mean_color = compute_mean_color(snapshot.data)
 
-    # print mean color
-    print(mean_color)
+        # publish mean color
+        plugin.publish("color.mean.r", mean_color[0], timestamp=snapshot.timestamp)
+        plugin.publish("color.mean.g", mean_color[1], timestamp=snapshot.timestamp)
+        plugin.publish("color.mean.b", mean_color[2], timestamp=snapshot.timestamp)
 
 
 if __name__ == "__main__":
