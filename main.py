@@ -13,7 +13,8 @@ def main():
         # open camera and take snapshot
 		# Running on sage node W027 using the top camera
 		# Running on sage node W023 using the left camera
-        with Camera("left_camera") as camera:
+		# Running on sage node W030 using the top camera
+        with Camera("top_camera") as camera:
             snapshot = camera.snapshot()
 
         # compute mean color

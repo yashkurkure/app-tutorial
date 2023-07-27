@@ -1,4 +1,4 @@
-name: "app-tutorial-2"
+name: "app-tutorial-job"
 plugins:
 - name: app-tutorial
   pluginSpec:
@@ -6,7 +6,7 @@ plugins:
     args:
     - top_camera
 nodes:
-  W056:
+  W030:
 scienceRules:
 - "schedule(app-tutorial): cronjob('app-tutorial', '* * * * *')"
 successcriteria:
