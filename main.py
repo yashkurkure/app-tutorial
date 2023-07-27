@@ -11,7 +11,8 @@ def compute_mean_color(image):
 def main():
     with Plugin() as plugin:
         # open camera and take snapshot
-        with Camera() as camera:
+		# Running on sage node W027 using the top camera
+        with Camera("top_camera") as camera:
             snapshot = camera.snapshot()
 
         # compute mean color

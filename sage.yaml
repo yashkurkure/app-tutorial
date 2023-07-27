@@ -1,12 +1,12 @@
 name: "app-tutorial"
 version: "0.1.0"
-description: "My reallt amazing app!"
+description: "My really amazing app!"
 keywords: ""
 authors: "Yash Kurkure"
 collaborators: ""
 funding: ""
 license: ""
-homepage: ""
+homepage: "https://github.com/yashkurkure/app-tutorial"
 source:
   architectures:
     - "linux/amd64"
