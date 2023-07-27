@@ -1,0 +1,13 @@
+name: "app-tutorial-2"
+plugins:
+- name: app-tutorial
+  pluginSpec:
+    image: registry.sagecontinuum.org/yashkurkure/app-tutorial:0.1.0
+    args:
+    - top_camera
+nodes:
+  W056:
+scienceRules:
+- "schedule(app-tutorial): cronjob('app-tutorial', '* * * * *')"
+successcriteria:
+- WallClock('15min')
